@@ -13,17 +13,13 @@ addons:
     packages:
     - postgresql-plpython-9.4
 
-before_install:
-  - createdb template_postgis
-  - psql -c "CREATE EXTENSION postgis" template_postgis
-
 script: echo 1
 ```
 
-[It fails to install and start postgresql](https://travis-ci.org/rochoa/test-travis/builds/113432117#L150-L171) with an error like:
+[It fails to install and start postgresql](https://travis-ci.org/rochoa/test-travis/builds/113438047#L150-L171) with an error like:
+
 ```
 ...
-
 Setting up postgresql-9.4 (9.4.6-1.pgdg12.4+1) ...
 Refused to start PostgreSQL 9.4, because PostgreSQL 9.1 is currently running! You should first stop 9.1 instance...
 invoke-rc.d: initscript postgresql, action "start" failed.
