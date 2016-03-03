@@ -1,0 +1,13 @@
+sudo: true
+
+addons:
+  postgresql: "9.4"
+  apt:
+    packages:
+    - postgresql-plpython-9.4
+
+before_install:
+  - createdb template_postgis
+  - psql -c "CREATE EXTENSION postgis" template_postgis
+
+script: echo 1
