@@ -1,15 +1,6 @@
 sudo: false
 
 addons:
-  apt:
-    sources:
-    - precise-pgdg-9.5
-    packages:
-    - postgresql-9.1
-    - postgresql-common
-    - postgresql-plpython-9.5
 
 script:
-  - echo 1
-  - apt-cache policy postgresql-9.5
-  - apt-cache policy postgresql-common
+  - cat /etc/init.d/postgresql
