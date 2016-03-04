@@ -1,6 +1,10 @@
 sudo: false
+dist: trusty
 
 addons:
+  postgresql: "9.4"
+  apt:
+    packages:
+    - postgresql-plpython-9.4
 
-script:
-  - cat /etc/init.d/postgresql
+script: echo 1
