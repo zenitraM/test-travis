@@ -5,6 +5,7 @@ addons:
     sources:
     - precise-pgdg-9.5
     packages:
+    - postgresql-9.1
     - postgresql-plpython-9.5
 
 script:
