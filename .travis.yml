@@ -1,11 +1,4 @@
-sudo: false
 dist: trusty
-
-addons:
-  postgresql: "9.4"
-  apt:
-    packages:
-    - postgresql-plpython-9.4
 
 script: 
 - echo 1
