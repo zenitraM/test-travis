@@ -7,4 +7,7 @@ addons:
     packages:
     - postgresql-plpython-9.4
 
-script: echo 1
+script: 
+- echo 1
+- curl -v https://registry.npmjs.org
+- dig registry.npmjs.org
